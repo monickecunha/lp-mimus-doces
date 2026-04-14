@@ -21,7 +21,6 @@
     width: auto;
 }
 
-/* Estilo do Botão Hambúrguer */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -52,7 +51,7 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* Classe que o JS vai ativar */
+
 .nav-links.active {
     display: flex;
 }
