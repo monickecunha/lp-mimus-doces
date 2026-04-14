@@ -11,7 +11,22 @@ Uma landing page desenvolvida para apresentar os produtos e a história da docer
 ## 🏗 Arquitetura e Organização
 O projeto foi estruturado para manter a separação clara de responsabilidades. O código fonte está dividido da seguinte forma:
 
-* **`/assets`**: Destinado exclusivamente a arquivos estáticos (imagens, ícones e fontes).
-* **`/src/css/components`**: Estilos isolados para cada seção da página, evitando o vazamento de estilos globais.
-* **`/src/js/components`**: Componentes de UI (Header, Hero, Menu, About, etc.) que possuem a única responsabilidade de renderizar seu próprio HTML.
-* **`/src/js/data`**: Separação dos dados do cardápio (bolos, docinhos, etc.) da lógica de apresentação.
+```text
+/
+├── assets/
+│   ├── icons/
+│   └── images/
+│       ├── bolos/
+│       ├── bolos-pote/
+│       ├── docinhos/
+│       └── sobremesas/
+├── src/
+│   ├── CSS/
+│   │   └── style.css
+│   ├── data/
+│   └── js/
+│       ├── components/
+│       ├── main.js
+│       └── utils.js
+├── index.html
+└── README.md
