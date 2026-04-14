@@ -1,0 +1,46 @@
+:root {
+    --branco: #FFFFFF;
+    --rosa-claro: #FF97CA;
+    --rosa-vibrante: #FF348E;
+    --cereja: #BE0049;
+    --vinho: #770021;
+
+    --texto-principal: #2B1A1F; 
+    --texto-secundario: #5A4A4E; 
+    --fundo: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto-principal);
+    
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6; 
+
+    overflow-x: hidden; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+ul {
+    list-style: none; 
+}
