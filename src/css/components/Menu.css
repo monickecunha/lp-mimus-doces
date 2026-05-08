@@ -1,0 +1,191 @@
+.menu-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--vinho);
+  color: var(--branco);
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 400px; /* Tamanho do celular */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu-card {
+  min-width: 100%; /* Garante um por vez */
+  position: relative;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+}
+
+/* Setas */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.btn-ver-mais {
+  background-color: var(--branco);
+  color: var(--vinho);
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* O container que cobre a tela toda */
+.modal {
+  display: none; /* Escondido */
+  position: fixed;
+  inset: 0; /* Top, Right, Bottom, Left = 0 */
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Quando adicionamos a classe .show via JS */
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 20px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto; /* Permite scroll se a lista for longa */
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--vinho);
+}
+
+.modal-list {
+  list-style: none;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr; /* No mobile, uma coluna de sabores */
+  gap: 8px;
+}
+
+.btn-order-modal {
+  display: block;
+  text-align: center;
+  background: #25d366; /* Cor do WhatsApp */
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    max-width: 800px;
+    /* Mantemos o overflow hidden para cortar o que está fora do carrossel */
+  }
+
+  .carousel-track {
+    gap: 1.5rem; /* Espaçamento entre os cards */
+  }
+
+  .menu-card {
+    /* A mágica acontece aqui: tira o 100% e divide o espaço.
+           O calc() desconta o tamanho do gap para os cards caberem certinho */
+    min-width: calc(50% - 0.75rem);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .menu-card:hover {
+    transform: translateY(-5px); /* Efeitinho de subir ao passar o mouse */
+  }
+
+  /* Afasta um pouco as setas para não ficarem em cima do texto */
+  .prev {
+    left: -10px;
+  }
+  .next {
+    right: -10px;
+  }
+}
+
+/* Desktop (A partir de 1024px - Exibe 3 cards por vez) */
+@media (min-width: 1024px) {
+  .carousel-container {
+    max-width: 1100px; /* Alarga o container para caber 3 bonitinhos */
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 20px; /* Defina um valor fixo para facilitar o cálculo no JS */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Esconder as setas inicialmente para o JS controlar a visibilidade */
+  .prev,
+  .next {
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .menu-card {
+    /* Divide o espaço por 3 e desconta o gap */
+    min-width: calc(33.333% - 1rem);
+  }
+}

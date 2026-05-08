@@ -22,10 +22,26 @@ O projeto foi estruturado para manter a separação clara de responsabilidades. 
 │       └── sobremesas/
 ├── src/
 │   ├── CSS/
-│   │   └── style.css
+│   │   ├── components/
+|   |   |   ├── About.css
+|   |   |   ├── Contact.css
+|   |   |   ├── Footer.css
+|   |   |   ├── Header.css
+|   |   |   ├── Hero.css
+|   |   |   ├── Location.css
+|   |   |   └── Menu.css
+|   |   ├── global.css
+│   |   └── main.css
 │   ├── data/
 │   └── js/
 │       ├── components/
+|       |   ├── About.js
+|       |   ├── Contact.js
+|       |   ├── Footer.js
+|       |   ├── Header.js
+|       |   ├── Hero.js
+|       |   ├── Location.js
+|       |   └── Menu.js
 │       ├── main.js
 │       └── utils.js
 ├── index.html
