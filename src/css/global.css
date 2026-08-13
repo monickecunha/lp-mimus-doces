@@ -59,7 +59,7 @@ ul {
 }
 
 .btn-primary {
-    background-color: var(--rosa-vibrante);
+    background-color: var(--vinho);
     color: var(--branco);
     box-shadow: 0 4px 15px rgba(255, 52, 142, 0.3);
 }

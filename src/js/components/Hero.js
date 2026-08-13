@@ -18,7 +18,7 @@ export function renderHero() {
 
             </div>
             <div class="hero-image">
-                <img src="assets/images/docinhos/candy.jpeg" alt="Deliciosos doces artesanais da Mimus Doces">
+                <img src="assets/images/bolos/bolo.svg" alt="Deliciosos doces artesanais da Mimus Doces">
             </div>
             
             

@@ -14,7 +14,7 @@ export function renderMenu() {
 
             <div class="menu-card">
 
-                <img src="../../assets/images/docinhos/docinhos.jpeg" alt="Docinhos">
+                <img src="../../assets/images/docinhos/candy.jpeg" alt="Docinhos">
 
                 <div class="card-info">
 
@@ -25,24 +25,6 @@ export function renderMenu() {
                 </div>
 
             </div>
-
-
-
-            <div class="menu-card">
-
-                <img src="../../assets/images/bolos-pote/bolo-pote.jpeg" alt="Bolos no Pote">
-
-                <div class="card-info">
-
-                    <h3>Bolos no Pote</h3>
-
-                    <button class="btn-ver-mais" onclick="openModal('pote')">Ver Opções</button>
-
-                </div>
-
-            </div>
-
-
 
             <div class="menu-card">
 
