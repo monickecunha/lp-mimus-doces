@@ -17,16 +17,18 @@
 }
 
 .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 3.5rem;
+    font-family: var(--fonte-manuscrito);
     color: var(--vinho);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    line-height: 0.8;
 }
 
 .hero-content p {
     font-size: 1.0rem;
     color: var(--texto-secundario);
     margin-bottom: 2rem;
+    line-height: 1.2;
 }
 
 .hero-buttons {
@@ -36,8 +38,6 @@
     max-width: 350px;
     margin: 0 auto;
 }
-
-
 
 .hero-image img {
     box-shadow: var(--);
@@ -87,7 +87,7 @@
     }
 
     .hero-content h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
 }

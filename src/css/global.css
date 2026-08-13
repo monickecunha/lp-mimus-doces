@@ -8,6 +8,11 @@
     --texto-principal: #2B1A1F; 
     --texto-secundario: #5A4A4E; 
     --fundo: #FAFAFA;
+
+    --fonte-principal: 'Inter','system-ui', -apple-system, sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+    --fonte-manuscrito: 'Great Vibes';
 }
 
 * {
