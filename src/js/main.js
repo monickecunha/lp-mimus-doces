@@ -3,6 +3,8 @@ import { renderHero } from './components/Hero.js';
 import { renderMenu } from './components/Menu.js';
 import { renderModal } from './components/Modal.js';
 import { renderAbout } from './components/About.js';
+import { renderContact } from './components/Contact.js';
+
 
 import { initMenu } from './utils/menu.js';
 import { initCarousel } from './utils/carousel.js';
@@ -16,6 +18,7 @@ app.innerHTML = `
     ${renderMenu()}
     ${renderModal()}
     ${renderAbout()}
+    ${renderContact()}
 `;
 
 initMenu();
