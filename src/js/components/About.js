@@ -1,6 +1,6 @@
 export function renderAbout() {
     return `
-        <section id="historia" class="about-section">
+        <section id="about" class="about-section">
             <h2 class="section-title">História</h2>
             
             <div class="about-container">

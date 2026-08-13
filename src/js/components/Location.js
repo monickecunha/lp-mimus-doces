@@ -1,6 +1,6 @@
 export function renderLocation() {
     return `
-        <section id="endereco" class="location-section">
+        <section id="adress" class="location-section">
             <h2 class="section-title">Endereço</h2>
             
             <div class="location-container">

@@ -1,6 +1,6 @@
 export function renderContact() {
     return `
-        <section id="contato" class="contact-section">
+        <section id="contact" class="contact-section">
             <h2 class="section-title">Contato</h2>
             
             <div class="social-links">
