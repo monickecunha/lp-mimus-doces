@@ -17,7 +17,6 @@ O projeto foi estruturado para manter a separação clara de responsabilidades. 
 │   ├── icons/
 │   └── images/
 │       ├── bolos/
-│       ├── bolos-pote/
 │       ├── docinhos/
 │       └── sobremesas/
 ├── src/
@@ -29,7 +28,8 @@ O projeto foi estruturado para manter a separação clara de responsabilidades. 
 |   |   |   ├── Header.css
 |   |   |   ├── Hero.css
 |   |   |   ├── Location.css
-|   |   |   └── Menu.css
+|   |   |   ├── Menu.css
+|   |   |   └── Modal.css
 |   |   ├── global.css
 │   |   └── main.css
 │   ├── data/
@@ -41,8 +41,12 @@ O projeto foi estruturado para manter a separação clara de responsabilidades. 
 |       |   ├── Header.js
 |       |   ├── Hero.js
 |       |   ├── Location.js
-|       |   └── Menu.js
-│       ├── main.js
-│       └── utils.js
+|       |   ├── Menu.js
+|       |   └── Modal.js
+|       ├── utils/
+|       |   ├── carousel.js
+|       |   ├── menu.js
+|       |   └── modal.js
+│       └── main.js
 ├── index.html
 └── README.md
