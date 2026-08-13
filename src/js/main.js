@@ -5,6 +5,7 @@ import { renderModal } from './components/Modal.js';
 import { renderAbout } from './components/About.js';
 import { renderContact } from './components/Contact.js';
 import { renderLocation } from './components/Location.js';
+import { renderFooter } from './components/Footer.js';
 
 
 import { initMenu } from './utils/menu.js';
@@ -21,6 +22,7 @@ app.innerHTML = `
     ${renderAbout()}
     ${renderContact()}
     ${renderLocation()}
+    ${renderFooter()}
 `;
 
 initMenu();
