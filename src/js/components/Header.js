@@ -3,7 +3,7 @@ export function renderHeader() {
         <header class="main-header">
             <nav class="navbar">
                 <div class="logo">
-                    <p>Mimus Doces</p>
+                    <img src="assets/icons/logo-mimus-doces.svg" alt="Logo da Mimus Doces">
                 </div>
                 
                 <button class="menu-toggle" aria-label="Abrir menu">
