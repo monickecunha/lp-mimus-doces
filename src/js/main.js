@@ -4,6 +4,7 @@ import { renderMenu } from './components/Menu.js';
 import { renderModal } from './components/Modal.js';
 import { renderAbout } from './components/About.js';
 import { renderContact } from './components/Contact.js';
+import { renderLocation } from './components/Location.js';
 
 
 import { initMenu } from './utils/menu.js';
@@ -19,6 +20,7 @@ app.innerHTML = `
     ${renderModal()}
     ${renderAbout()}
     ${renderContact()}
+    ${renderLocation()}
 `;
 
 initMenu();
