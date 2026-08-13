@@ -5,7 +5,7 @@ export function renderMenu() {
             <div class="carousel-container">
                 <div class="carousel-track">
                     <div class="menu-card active">
-                        <img src="../../assets/images/bolos/bolo.jpeg" alt="Bolos de Aniversário">
+                        <img src="../../assets/images/bolos/bolo-menu.svg" alt="Bolo de Aniversário">
                         <div class="card-info">
                     <h3>Bolos de Aniversário</h3>
                     <button class="btn-ver-mais" onclick="openModal('bolos')">Ver Sabores e Preços</button>
@@ -14,7 +14,7 @@ export function renderMenu() {
 
             <div class="menu-card">
 
-                <img src="../../assets/images/docinhos/candy.jpeg" alt="Docinhos">
+                <img src="../../assets/images/docinhos/docinhos.svg" alt="Docinhos">
 
                 <div class="card-info">
 
@@ -28,7 +28,7 @@ export function renderMenu() {
 
             <div class="menu-card">
 
-                <img src="../../assets/images/sobremesas/sobremesa.jpeg" alt="Sobremesas">
+                <img src="../../assets/images/sobremesas/sobremesa.svg" alt="Sobremesas">
 
                 <div class="card-info">
 
@@ -36,7 +36,7 @@ export function renderMenu() {
 
                     <button class="btn-ver-mais" onclick="openModal('sobremesas')">Ver Detalhes</button>
 
-                </div>s
+                </div>
 
             </div>
 

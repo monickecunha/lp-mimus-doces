@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.menu-section h2 {
+  font-family: var(--fonte-manuscrito);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 .carousel-container {
   position: relative;
   max-width: 400px; /* Tamanho do celular */
