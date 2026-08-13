@@ -19,15 +19,6 @@ export const menuData = {
             "Napolitano", "Stikadinho"
         ]
     },
-    pote: {
-        titulo: "Bolos no Pote",
-        preco: "Consulte valores",
-        detalhes: "Potes individuais super recheados",
-        sabores: [
-            "Stikadinho", "Ouro branco", "Doce de leite com côco", 
-            "Beijinho", "Brigadeiro", "Prestígio", "Branquinho e pêssego"
-        ]
-    },
     sobremesas: {
         titulo: "Sobremesas na Travessa",
         preco: "Consulte valores",

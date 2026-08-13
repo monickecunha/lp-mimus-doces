@@ -11,7 +11,10 @@ export function initCarousel() {
 
         const containerWidth = document.querySelector('.carousel-container').offsetWidth;
         const cardWidth = cards[0].offsetWidth;
-        const gap = 20; 
+
+        const trackStyle = window.getComputedStyle(track);
+
+        const gap = parseFloat(trackStyle.gap) || 0;
         
         const visibleCards = Math.round(containerWidth / cardWidth);
         

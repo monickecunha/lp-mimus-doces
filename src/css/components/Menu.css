@@ -55,6 +55,9 @@
   cursor: pointer;
   border-radius: 50%;
   z-index: 10;
+  transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
 }
 
 .prev {
@@ -75,7 +78,7 @@
 
 /* O container que cobre a tela toda */
 .modal {
-  display: none; /* Escondido */
+  display: none; 
   position: fixed;
   inset: 0; /* Top, Right, Bottom, Left = 0 */
   background: rgba(0, 0, 0, 0.7);
@@ -130,6 +133,12 @@
   font-weight: bold;
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
 @media (min-width: 768px) {
   .carousel-container {
     max-width: 800px;
@@ -173,21 +182,7 @@
     display: flex;
     gap: 20px; /* Defina um valor fixo para facilitar o cálculo no JS */
     transition: transform 0.5s ease-in-out;
-  }
-
-  /* Esconder as setas inicialmente para o JS controlar a visibilidade */
-  .prev,
-  .next {
-    transition:
-      opacity 0.3s ease,
-      visibility 0.3s ease;
-  }
-
-  .hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+  }  
 
   .menu-card {
     /* Divide o espaço por 3 e desconta o gap */
