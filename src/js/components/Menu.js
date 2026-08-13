@@ -8,7 +8,7 @@ export function renderMenu() {
                         <img src="../../assets/images/bolos/bolo-menu.svg" alt="Bolo de Aniversário">
                         <div class="card-info">
                     <h3>Bolos de Aniversário</h3>
-                    <button class="btn-ver-mais" onclick="openModal('bolos')">Ver Sabores e Preços</button>
+                    <button class="btn-ver-mais" data-category="bolos">Ver Sabores e Preços</button>
                 </div>
             </div>
 
@@ -20,7 +20,7 @@ export function renderMenu() {
 
                     <h3>Docinhos Artesanais</h3>
 
-                    <button class="btn-ver-mais" onclick="openModal('docinhos')">Ver Sabores</button>
+                    <button class="btn-ver-mais" data-category="docinhos">Ver Sabores</button>
 
                 </div>
 
@@ -34,7 +34,7 @@ export function renderMenu() {
 
                     <h3>Sobremesas na Travessa</h3>
 
-                    <button class="btn-ver-mais" onclick="openModal('sobremesas')">Ver Detalhes</button>
+                    <button class="btn-ver-mais" data-category="sobremesas">Ver Detalhes</button>
 
                 </div>
 
@@ -42,10 +42,7 @@ export function renderMenu() {
 
         </div>
 
-
-
         <button class="prev" aria-label="Anterior">&#10094;</button>
-
         <button class="next" aria-label="Próximo">&#10095;</button>
 
     </div>

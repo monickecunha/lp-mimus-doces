@@ -1,4 +1,4 @@
-import { menuData } from '../data/menuData.js';
+import { menuData } from '../../data/menuData.js';
 
 export function initModal() {
     const modal = document.getElementById("menu-modal");
@@ -15,13 +15,14 @@ export function initModal() {
 
                 modalBody.innerHTML = `
                     <h2 class="modal-title">${data.titulo}</h2>
-                    <p class="modal-price"><strong>${data.preco}</strong></p>
                     <p class="modal-details">${data.detalhes}</p>
-                    <div class="modal-divider"></div>
                     <h3>Sabores:</h3>
                     <ul class="modal-list">
                         ${data.sabores.map(sabor => `<li>${sabor}</li>`).join('')}
                     </ul>
+                    <p class="modal-price">Preço: ${data.preco}</p>
+                    
+                    
                     <a href="https://wa.me/5551989274570" target="_blank" class="btn-order-modal">
                         Encomendar agora
                     </a>
