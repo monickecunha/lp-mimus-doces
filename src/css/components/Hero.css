@@ -45,7 +45,7 @@
 .hero-image img {
     filter: drop-shadow(0px 15px 20px rgba(74, 16, 29, 0.25));
     object-fit: contain;
-    width: 100%;
+    width: 70%;
     max-height: 600px;
 }
 
@@ -95,7 +95,7 @@
         grid-area: image; 
         display: flex;
         justify-content: flex-end;
-        min-width: 300px;
+        min-width: 350px;
         max-width: 600px;
     }
 
