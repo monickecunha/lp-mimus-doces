@@ -1,6 +1,6 @@
 export const menuData = {
     bolos: {
-        titulo: "Bolos de Aniversário",
+        titulo: "Bolos",
         preco: "A partir de R$ 70,00",
         detalhes: "De 5 a 35 fatias",
         sabores: [
@@ -24,11 +24,11 @@ export const menuData = {
         preco: "Consulte valores",
         detalhes: "Ideal para compartilhar em família",
         sabores: [
-            "Branquinho, merengue e mousse de limão",
-            "Brigadeiro, pedaços de chocolate e mousse de maracujá",
-            "Banoffe: banana, doce de leite, biscoito triturado e creme de nata",
-            "Branquinho, morango e brigadeiro",
-            "Branquinho com côco, abacaxi e creme de nata"
+            "- Branquinho, merengue e mousse de limão;",
+            "- Brigadeiro, pedaços de chocolate e mousse de maracujá;",
+            "- Banoffe: banana, doce de leite, biscoito triturado e creme de nata;",
+            "- Branquinho, morango e brigadeiro;",
+            "- Branquinho com côco, abacaxi e creme de nata;"
         ]
     }
 };

@@ -16,7 +16,7 @@ export function initModal() {
                 modalBody.innerHTML = `
                     <h2 class="modal-title">${data.titulo}</h2>
                     <p class="modal-details">${data.detalhes}</p>
-                    <h3>Sabores:</h3>
+                    <h3 class="modal-subtitle">Sabores:</h3>
                     <ul class="modal-list">
                         ${data.sabores.map(sabor => `<li>${sabor}</li>`).join('')}
                     </ul>
