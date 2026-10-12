@@ -3,6 +3,7 @@
   background-color: var(--vinho);
   color: var(--branco);
   text-align: center;
+  
 }
 
 .menu-section h2 {
@@ -165,15 +166,16 @@
 
   /* Afasta um pouco as setas para não ficarem em cima do texto */
   .prev {
-    left: -10px;
+    left: 12px;
   }
   .next {
-    right: -10px;
+    right: 12px;
   }
 }
 
 /* Desktop (A partir de 1024px - Exibe 3 cards por vez) */
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
+
   .carousel-container {
     max-width: 1100px; /* Alarga o container para caber 3 bonitinhos */
   }
