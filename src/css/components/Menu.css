@@ -141,7 +141,7 @@
 
 @media (min-width: 768px) {
   .carousel-container {
-    max-width: 800px;
+    max-width: 100%;
     /* Mantemos o overflow hidden para cortar o que está fora do carrossel */
   }
 
