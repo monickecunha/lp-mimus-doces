@@ -81,3 +81,88 @@
 
 }
 
+@media (min-width: 960px) {
+
+    .hero-section {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+        grid-template-areas:
+            "text image"
+            "buttons image";
+
+        align-content: center;
+        align-items: center;
+
+        column-gap: 2.5rem;
+        row-gap: 1rem;
+
+        max-width: 1200px;
+
+        padding: 5rem 3rem 4rem;
+        
+        height: auto;
+        min-height: 0;
+    }
+
+    /* Texto à esquerda */
+    .hero-text {
+        grid-area: text;
+        text-align: left;
+        align-self: end;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(3rem, 4vw, 4rem);
+        line-height: 1.1;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    /* Botões abaixo do texto */
+    .hero-buttons {
+        grid-area: buttons;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+        align-self: start;
+
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .hero-buttons a {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+
+    /* Imagem à direita */
+    .hero-image {
+        grid-area: image;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        min-width: 0;
+        max-width: 600px;
+    }
+
+    .hero-image img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        max-height: 600px;
+        object-fit: contain;
+    }
+}
